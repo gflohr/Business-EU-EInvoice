@@ -1,0 +1,7 @@
+#! /usr/bin/env perl
+
+use strict;
+
+use Business::EU::EInvoice::CLI;
+
+Business::EU::EInvoice::CLI->new->dispatch;
