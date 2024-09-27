@@ -1,6 +1,6 @@
 # Business-EU-EInvoice
 
-Various scripts and tools for generating EN16931 conforming electronic invoices.
+Various scripts and tools for generating EN16931 conforming electronic invoices
 
 ## Description
 
