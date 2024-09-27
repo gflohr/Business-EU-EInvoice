@@ -160,13 +160,6 @@ sub dispatch {
 		push @instances, $class->new(\@args, \%options);
 	}
 
-	if (!defined $options{in}) {
-		$self->usageError(__x"the option '--in' (resp. '-i') is mandatory.");
-	}
-	if (!defined $options{out}) {
-		$self->usageError(__x"the option '--out' (resp. '-o') is mandatory.");
-	}
-
 	foreach my $instance (@instances) {
 		$instance->run;
 	}
@@ -273,7 +266,7 @@ sub usageError {
 }
 
 sub displayVersion {
-    my $msg = __x('{program} (Image::MagickTools) {version}
+    my $msg = __x('{program} (Business::EU::EInvoice) {version}
 Copyright (C) {years} Guido Flohr <guido.flohr@cantanea.com>.
 License WTFPL_2: <http://www.wtfpl.net/>
 This is free software: you are free to change and redistribute it.
